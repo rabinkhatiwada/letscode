@@ -2,10 +2,20 @@
 	margin:0;
 	padding: 0;
 }
+.pagetitle{
+  font-size:40px;
+  text-align: center;
+  font-weight: bolder;
+  text-decoration: underline;
+  font-family: cursive;
+  color:orange;
+  margin-bottom: 50px;
+  text-decoration-style: dotted;
+}
 #logo{
 	font-size:40px;
 	color: orange;
-  text-shadow: 2px 4px 4px black;
+  text-shadow: 1px 1px 1px white;
   margin-left: 5px;
   font-weight: bolder;
 
@@ -30,11 +40,8 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-  background: #00FFAA;
-background: -moz-linear-gradient(left, #00FFAA 0%, #C5FFF2 50%, #FFFFFF 100%);
-background: -webkit-linear-gradient(left, #00FFAA 0%, #C5FFF2 50%, #FFFFFF 100%);
-background: linear-gradient(to right, #00FFAA 0%, #C5FFF2 50%, #FFFFFF 100%);
-border-bottom:2px solid #ff623b;
+  background:black;
+border-bottom:1px inset white;
 }
 .sticky{
   position:
@@ -45,24 +52,27 @@ border-bottom:2px solid #ff623b;
 }
 #navbar li{
 	list-style-type: none;
-	background-color: #17ffa2;
+	background-color: black;
 	padding: 5px;
 	margin: 20px;
-	border: 5px inset green;
+	border: 5px inset white;
   border-radius: 40px;
 }
 #navbar li:hover{
-	background-color: orange;
-	border: 5px inset #FF7441;
-    border-radius: 40px;
+	background-color:grey;
+  color: white;
 }
 
 #navbar li a{
-	color: black;
+  color: white;
 	font-size: 20px;
 	font-family: cursive;
 	text-decoration: none;
 }
+#navbar li a:hover{
+  color: white;
+}
+
 #home{
   height: 100vh;
   background-image:url(../img/bgcode.jpg);
@@ -70,28 +80,20 @@ border-bottom:2px solid #ff623b;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
-  border-bottom:2px solid #ff623b;
+  border-bottom:2px inset white;
 
 
   /*clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 60% 100%, 0 90%);*/
 
 }
 /*About us page begins now*/
-#aboutus >h1{
-  font-size:40px;
-  text-align: center;
-  font-weight: bolder;
-  text-decoration: underline;
-  font-family: cursive;
-  margin-bottom: 50px;
-}
 #aboutus{
-	background-color: lightgrey;
+	background-color: black;
 	height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-bottom:2px solid #ff623b;
+  border-bottom:1px inset white;
 
 }
 #about{
@@ -100,7 +102,7 @@ border-bottom:2px solid #ff623b;
 #about img{
   border-radius: 500px;
   margin:10px;
-  border: 5px inset green;
+  border: 5px inset white;
   transition: transform .2s;
 
 
@@ -110,17 +112,21 @@ border-bottom:2px solid #ff623b;
 
 }
 #description h1{
-  color:orange;
+  color:white;
   text-align: left;
   font-size: 30px;
+  margin-left:10px;
   text-decoration: none;
 }
 
 #description h3{
-  color: green;
+  color:green;
   font-size: 20px;
+  margin-left:10px;
+
 }
 #description p{
+  color: white;
   font-size: 18px;
   text-align: justify;
   margin-left:10px;
@@ -132,51 +138,44 @@ border-bottom:2px solid #ff623b;
 /*services section*/
 #services{
   height:80vh;
-  background-color: lightblue;
-    border-bottom:2px solid #ff623b;
+  background-color: black;
+    border-bottom:1px inset white;
 
 }
 #our-serv{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  transition: transform .5s ease;
+
+
+
 }
-#services >h1{
-  font-size:40px;
-  text-align: center;
-  font-weight: bolder;
-  text-decoration: underline;
-  font-family: cursive;
-  margin-bottom: 50px;
+#our-serv :hover{
+    transform: scale(1.08); 
+
 }
+
 .service-box{
-     background: #17FE92;
-background: -moz-linear-gradient(left, #17FE92 0%, #40FCC4 50%, #A4FFB7 100%);
-background: -webkit-linear-gradient(left, #17FE92 0%, #40FCC4 50%, #A4FFB7 100%);
-background: linear-gradient(to right, #17FE92 0%, #40FCC4 50%, #A4FFB7 100%);
+     background: white;
      padding: 30px;
-     border: 3px inset red;
+     border: 3px inset white;
      display:flex;
      flex-direction: column;
      align-items: center;
      justify-content: space-between;
      -webkit-box-shadow: -5px 4px 21px -1px rgba(0,0,0,0.91); 
      box-shadow: -5px 4px 21px -1px rgba(0,0,0,0.91);
-     transition: transform .2s;
      border-radius: 10px;
 
 
 
 }
-#service-box :hover{
-   transform: scale(1.5); 
-
-}
 .service-box h1{
    font-size: 30px;
-   color: orange;
+   color: black;
    text-align: center;
-     text-shadow: 2px 1px 0px black;
+    text-shadow: 1px 1px 0px lightgrey;
 
 }
 .service-box img{
@@ -189,32 +188,24 @@ background: linear-gradient(to right, #17FE92 0%, #40FCC4 50%, #A4FFB7 100%);
 #our-courses{
   display: flex;
   flex-direction: column;
+  background-color: black;
+  border-bottom: 1px inset white;
 }
 
-#our-courses> h1{
-  font-size:40px;
-  text-align: center;
-  font-weight: bolder;
-  text-decoration: underline;
-  font-family: cursive;
-  margin-bottom: 50px;
-}
+
 #courses{
   display: flex;
 
 
 }
 .course-details{
-  background: #17FE92;
-background: -moz-linear-gradient(left, #17FE92 0%, #40FCC4 50%, #A4FFB7 100%);
-background: -webkit-linear-gradient(left, #17FE92 0%, #40FCC4 50%, #A4FFB7 100%);
-background: linear-gradient(to right, #17FE92 0%, #40FCC4 50%, #A4FFB7 100%);
+  background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin:20px;
   padding:10px;
-  border: 3px inset red;
+  border: 2px inset white;
   -webkit-box-shadow: -5px 4px 8px -1px rgba(0,0,0,0.91); 
 box-shadow: -5px 4px 8px -1px rgba(0,0,0,0.91);
 
@@ -226,6 +217,7 @@ box-shadow: -5px 4px 8px -1px rgba(0,0,0,0.91);
 }
 .course-details p{
   text-align: justify;
+  color: black;
 
 }
 
@@ -248,38 +240,42 @@ box-shadow: -5px 4px 8px -1px rgba(0,0,0,0.91);
 
 #contact-us{
  display: flex;
+ background-color: black;
+ align-items: center;
 }
 #company-details a{
   font-size:30px;
   margin-right:10px;
   margin-left:10px;
+  color:white;
 }
 
 
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+.form_input{
+  margin-bottom: 15px;
 }
-input[type=email], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+.form_input input[type="text"]{
+  width: 250px;
+  padding: 12px 20px;
+border: solid 1px grey; 
+  border-radius:1px;
 }
-
+.form_input input[type="email"]{
+  width: 250px;
+  padding: 12px 20px;
+  border: solid 1px grey; 
+  border-radius:1px;
+}
+.form_input textarea{
+  width: 250px;
+  padding: 12px 20px;
+  height: 80px;
+  border: solid 1px grey; 
+  border-radius:1px;
+  resize: none;
+}
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: black;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -288,16 +284,33 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: grey;
 }
 
 #contact-form {
-  border-radius: 5px;
+  border-radius: 0px;
   background-color: #f2f2f2;
-  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 500px;
+  padding-left:40px;
+  padding-right:40px;
+
 }
 #contact-us h1{
  text-align: center;
+ color: white;
+}
+#company-details h3,p{
+ color: white;
+}
+#contact-form h1{
+ color: black;
+}
+#map iframe{
+  width: 450px;
+  height: 500px;
+  margin: 10px;
 }
 
 
@@ -320,12 +333,12 @@ input[type=submit]:hover {
   padding: 5px;
   margin: 8px;
   font-size:18px;
-  border: 2px inset green;
+  border: 2px inset white;
   border-radius: 40px;
 }
 #navbar li:hover{
-  background-color: orange;
-  border: 2px inset #FF7441;
+  background-color: grey;
+  border: 2px inset white;
   border-radius: 40px;
 }
 #about{
@@ -349,7 +362,7 @@ input[type=submit]:hover {
 #services{
   height: auto;
 }
- 
+
 #courses{
   flex-direction:column;
 }
@@ -361,7 +374,19 @@ input[type=submit]:hover {
 #contact-us{
   flex-direction: column;
 }
+#company-details{
+ margin:20px;
+}
 #home h1{
+  font-size:30px;
+}
+.service-box{
+  margin-bottom:20px;
+}
+#course-details p{
+  color: black;
+}
+.pagetitle{
   font-size:30px;
 }
 

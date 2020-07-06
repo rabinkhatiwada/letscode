@@ -25,7 +25,7 @@
 
 <div class="container"> 
     <section id="aboutus">
-      <h1>About Us</h1>
+      <h1 class="pagetitle">About Us</h1>
         <div id="about">
               <img src="https://images.unsplash.com/photo-1569012871812-f38ee64cd54c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
               <div id="description">
@@ -50,7 +50,7 @@
     </section>
 
     <section id="services">
-      <h1>Services</h1>
+      <h1 class="pagetitle">Services</h1>
 
       <div id="our-serv">
             <div class="service-box">
@@ -71,7 +71,7 @@
     </section>
 
     <section id="our-courses">
-      <h1>Buy Courses at Low Prices</h1>
+      <h1 class="pagetitle">Buy Courses at Low Prices</h1>
       <div id="courses">
         <div class="course-details">
           <img src="https://image.flaticon.com/icons/svg/2905/2905977.svg">
@@ -137,31 +137,44 @@
       </div>
       <div id="contact-form">
        <h1>Send Us message</h1>
-      <form action="/action_page.php">
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+       <div class="form">
+        <form name="contactform" method="post" action="form.php">
 
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <div class="form_input">
+            <label for="fullname"></label>
 
-      <label for="email">Email</label>
-      <input type="email" placeholder="lipulekhhamroho@gmail.com">
+          <input type="text" placeholder="Fullname" name="fullname">
+        </div>
+        <div class="form_input">
+          <label for="address"></label>
 
+          <input type="text" placeholder="Address" name="address">
+        </div>
+        <div class="form_input">
+                    <label for="email"></label>
+
+          <input type="email" placeholder="someone@gmail.com" name="email">
+        </div>
+        <div class="form_input">
+                <label for="message"></label>
+
+          <textarea placeholder="Message"></textarea>
+        </div>
+        <div class="form_input">
+        <input type="submit" class="button" name="fullname" value="Submit">
+        </div>
+        </div>
+        </form>
       
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-      <input type="submit" value="Submit">
-    </form>
        </div>
 
 
       <div id="map">
-        <h1>Location</h1>
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13788.389212085109!2d81.01618763216781!3d30.234301609016292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a43d70d8789d0b%3A0x14b4e88bcb745a42!2sLipulekh%20Pass!5e0!3m2!1sen!2snp!4v1593857815466!5m2!1sen!2snp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13788.389212085109!2d81.01618763216781!3d30.234301609016292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a43d70d8789d0b%3A0x14b4e88bcb745a42!2sLipulekh%20Pass!5e0!3m2!1sen!2snp!4v1593857815466!5m2!1sen!2snp"frameborder="0" style="border:1;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </section>
-    <footer style="background-color:black">
+    <footer style="background-color:grey">
       <p style="color: white; text-align: center;">&copy; Rabin Khatiwada 2020</p>
      </footer>
 </div>  
